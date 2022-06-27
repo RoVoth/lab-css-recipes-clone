@@ -13,3 +13,19 @@ hr {
     background-image:"./images/apple-pie.jpg";
 }
 
+.ingredients ul li{
+    list-style: none;
+  }
+  .ingredients ul li:before{
+    content: "- ";
+  }
+
+  #directions ol {
+    list-style: none;
+    counter-reset: list;
+  }
+  
+  #directions li:before {
+    content: counter(list) ') ';
+    counter-increment: list;
+  }
